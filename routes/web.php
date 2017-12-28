@@ -34,4 +34,7 @@ Route::get('/login', 'LoginController@create' );
 
 Route::post('/login', 'LoginController@store' );
 
+Route::get('/users/{id}', 'UsersController@show' );
+
+
 

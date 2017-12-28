@@ -16,6 +16,10 @@
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" name="password">
         </div>
+         <div class="form-group">
+            <label for="age">Age</label>
+             <input type="text" class="form-control" id="age" name="age"></textarea>
+        </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>

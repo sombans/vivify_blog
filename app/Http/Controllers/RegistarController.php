@@ -9,6 +9,7 @@ class RegistarController extends Controller
     public function __construct(){
 
     $this->middleware('guest');
+    $this->middleware('checkAge')->only('store');
     }
     public function create(){
         return view('register.create');
@@ -29,7 +30,7 @@ class RegistarController extends Controller
 
     auth()->login($user);
 
-    
+    session()->flash('message','Uspesno ste registrovani');
 
 return redirect('/posts');
     }

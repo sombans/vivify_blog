@@ -22,6 +22,7 @@
             <textarea class="form-control" id="body" name="body"></textarea>
             @include('posts.partials.error-message', ['fieldTitle' => 'body'])
         </div>
+       
 
         <div class="form-group">
             <label for="published">Publish?</label>
